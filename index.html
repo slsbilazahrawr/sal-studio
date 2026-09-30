@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAL STUDIO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Shantell+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER NAVBAR -->
+  <header>
+    <div class="logo">SAL STUDIO</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-btn active" onclick="showPage('beranda')">Beranda</a></li>
+        <li><a href="#" class="nav-btn" onclick="showPage('single-frame')">Single Frame</a></li>
+        <li><a href="#" class="nav-btn" onclick="showPage('team-frame')">Team Frame</a></li>
+        <li><a href="#" class="nav-btn" onclick="showPage('photo')">Photo</a></li>
+        <li><a href="#" class="nav-btn" onclick="showPage('rating')">Rating</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- PAGE 1: BERANDA -->
+    <section id="beranda" class="page active">
+      <div class="hero-box">
+        <h1>Welcome to Sal Studio !</h1>
+        <p>Interactive Photobooth buatan Salsa untuk mengabadikan momen serumu. Pilih framemu, jepret fotomu, dan download hasilnya gratis! 📸💖</p>
+        <button class="action-btn" onclick="showPage('single-frame')">Pilih Frame & Mulai Foto ✨</button>
+      </div>
+    </section>
+
+    <!-- PAGE 2: SINGLE FRAME -->
+    <section id="single-frame" class="page">
+      <h2>🌸 Single Frame Collection</h2>
+      <p style="margin-bottom: 20px; color: #7a525d;">Tampil dengan Frame Single! Pilih frame favoritmu di bawah ini:</p>
+      <div class="frame-grid">
+        <div class="frame-card" onclick="selectFrame('Single Frame 1', 'SingleFrame/frame1__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame1__.png" alt="Single Frame 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 1 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Single Frame 2', 'SingleFrame/frame2__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame2__.png" alt="Single Frame 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 2 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 3', 'SingleFrame/frame3__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame3__.png" alt="Single Frame 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 3 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 4', 'SingleFrame/frame4__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame4__.png" alt="Single Frame 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 4 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 5', 'SingleFrame/frame5__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame5__.png" alt="Single Frame 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 5 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 6', 'SingleFrame/frame6__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame6__.png" alt="Single Frame 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 6 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 7', 'SingleFrame/frame7__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame7__.png" alt="Single Frame 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 7 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 8', 'SingleFrame/frame8__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame8__.png" alt="Single Frame 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 8 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      
+        <div class="frame-card" onclick="selectFrame('Single Frame 9', 'SingleFrame/frame9__.png')">
+          <div class="frame-preview">
+            <img src="SingleFrame/frame9__.png" alt="Single Frame 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="fallback-text" style="display:none;">Frame 9 🖼️</span>
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: TEAM FRAME -->
+    <section id="team-frame" class="page">
+      <h2>🎀 Team Frame Collection</h2>
+      <p style="margin-bottom: 20px; color: #7a525d;">Foto bareng bestie dengan Team Frame! Pilih frame tim kesukaanmu:</p>
+      
+      <div class="frame-grid">
+        <div class="frame-card" onclick="selectFrame('Team Frame 1', 'TeamFrame/tframe1_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe1_.png" alt="Team Frame 1">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 2', 'TeamFrame/tframe2_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe2_.png" alt="Team Frame 2">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 3', 'TeamFrame/tframe3_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe3_.png" alt="Team Frame 3">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 4', 'TeamFrame/tframe4_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe4_.png" alt="Team Frame 4">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 5', 'TeamFrame/tframe5_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe5_.png" alt="Team Frame 5">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 6', 'TeamFrame/tframe6_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe6_.png" alt="Team Frame 6">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 7', 'TeamFrame/tframe7_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe7_.png" alt="Team Frame 7">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 8', 'TeamFrame/tframe8_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe8_.png" alt="Team Frame 8">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+
+        <div class="frame-card" onclick="selectFrame('Team Frame 9', 'TeamFrame/tframe9_.png')">
+          <div class="frame-preview">
+            <img src="TeamFrame/tframe9_.png" alt="Team Frame 9">
+          </div>
+          <button class="btn-select">Pilih Frame Ini 💕</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: PHOTO STUDIO -->
+    <section id="photo" class="page">
+      <div class="studio-box">
+        <h2>📸 Studio Foto</h2>
+        <p class="selected-info" style="margin-top: 5px;">Frame Terpilih: <b id="selected-frame-name" style="color: #ff4d6d;">Belum Memilih</b></p>
+        
+        <div class="camera-viewport">
+          <video id="webcam" autoplay playsinline></video>
+          <div id="countdown" class="countdown-overlay"></div>
+          <img id="frame-overlay" src="SingleFrame/frame1__.png" alt="Frame Overlay">
+          <canvas id="photo-canvas" class="hidden"></canvas>
+        </div>
+
+        <div class="button-group">
+          <button class="action-btn" id="capture-btn" onclick="capturePhoto()">Ambil Foto 📷</button>
+          <button class="action-btn" id="download-btn" onclick="downloadPhoto()">Unduh Foto 💾</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 5: RATING -->
+    <section id="rating" class="page">
+      <div class="form-card">
+        <h2>💖 Rating & Feedback</h2>
+        <p style="text-align: center; color: #7a525d; margin-bottom: 20px; font-size: 0.9rem;">
+          Gimana pengalaman foto kamu di Sal Studio? Kasih tahu Salsa yaa! 
+        </p>
+        
+        <form id="feedback-form" onsubmit="sendToWhatsApp(event)">
+          
+          <!-- BINTANG RATING CANTIK -->
+          <div class="rating-box">
+            <label class="rating-label">Berikan Bintang:</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5 ⭐⭐⭐⭐⭐" required />
+              <label for="star5" title="5 Bintang">★</label>
+              
+              <input type="radio" id="star4" name="rating" value="4 ⭐⭐⭐⭐" />
+              <label for="star4" title="4 Bintang">★</label>
+              
+              <input type="radio" id="star3" name="rating" value="3 ⭐⭐⭐" />
+              <label for="star3" title="3 Bintang">★</label>
+              
+              <input type="radio" id="star2" name="rating" value="2 ⭐⭐" />
+              <label for="star2" title="2 Bintang">★</label>
+              
+              <input type="radio" id="star1" name="rating" value="1 ⭐" />
+              <label for="star1" title="1 Bintang">★</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Ketik namamu di sini..." required>
+          </div>
+
+          <div class="input-group">
+            <label for="ulasan">Ulasan / Kesan Pesan:</label>
+            <textarea id="ulasan" rows="4" placeholder="Tuliskan masukan atau pesan kesanmu di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="action-btn submit-btn" style="width: 100%; margin-top: 10px;">
+            Kirim Pesan 💬
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
